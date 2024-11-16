@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Library</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f8f8f8;
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+        }
+        .sidebar {
+            width: 200px;
+            background-color: #333;
+            padding: 1em;
+            color: white;
+        }
+        .sidebar a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 0.5em;
+        }
+        .sidebar a:hover {
+            background-color: #555;
+        }
+        .main-content {
+            flex: 1;
+            padding: 1em;
+        }
+        .folder {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1em;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin: 1em;
+            cursor: pointer;
+        }
+        .folder:hover {
+            background-color: #0bd5f0;
+            transition: background-color 0.5s ease-in-out;
+            animation: backgroundAnimation 10s infinite alternate;
+        }
+        @keyframes backgroundAnimation {
+            0% {
+                background-color: #0bd5f0;
+            }
+            25% {
+                background-color: #ff7b00;
+            }
+            50% {
+                background-color: #ff5000;
+            }
+            75% {
+                background-color: #00ff88;
+            }
+            100% {
+                background-color: #0bd5f0;
+            }
+        }
+        .folder-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 0.5em;
+        }
+        .folder-description {
+            font-size: 0.9em;
+            color: #666;
+        }
+        .download-link {
+            display: block;
+            text-decoration: none;
+            color: #337ab7;
+            margin-top: 0.5em;
+        }
+        .download-link:hover {
+            text-decoration: underline;
+        }
+        .back-btn {
+            background-color: #337ab7;
+            color: white;
+            border: none;
+            padding: 0.5em;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        .back-btn:hover {
+            background-color: #23527c;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <a href="index.html">Home</a>
+            <a href="library_catalogue.html">Library Catalogue</a>
+            <a href="services.html">Services</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <div class="main-content">
+            <h1>Education Library</h1>
+            <div class="folder">
+                <img src="file.png" alt="NMQ">
+                <div class="folder-title">NMQ</div>
+                <div class="folder-description">Download NMQ ms and pdfs</div>
+                <a href="file:///C:/path/to/NMQ.zip" class="download-link">Download</a>
+            </div>
+            <div class="folder">
+                <img src="file.png" alt="WEM">
+                <div class="folder-title">WEM</div>
+                <div class="folder-description">Download WEM ms and pdfs</div>
+                <a href="WEM RESEARCH 2025.zip" class="download-link">Download</a>
+            </div>
+            <div class="folder">
+                <img src="file.png" alt="EDM">
+                <div class="folder-title">EDM</div>
+                <div class="folder-description">Download EDM ms and pdfs</div>
+                <a href="EDM 2025.zip" class="download-link">Download</a>
+            </div>
+            <div class="folder">
+                <img src="file.png" alt="ELP">
+                <div class="folder-title">ELP</div>
+                <div class="folder-description">Download ELP ms and pdfs</div>
+                <a href="file:///C:/path/to/ELP.zip" class="download-link">Download</a>
+            </div>
+            <div class="folder">
+                <img src="file.png" alt="LVO">
+                <div class="folder-title">LVO</div>
+                <div class="folder-description">Download LVO ms and pdfs</div>
+                <a href="file:///C:/path/to/LVO.zip" class="download-link">Download</a>
+            </div>
+            <div class="folder">
+                <img src="file.png" alt="LSG">
+                <div class="folder-title">LSG</div>
+                <div class="folder-description">Download LSG ms and pdfs</div>
+                <a href="file:///C:/path/to/LSG.zip" class="download-link">Download</a>
+            </div>
+            <button class="back-btn" onclick="window.location.href='index.html'">Back to Home</button>
+        </div>
+    </div>
+</body>
+</html>
+
